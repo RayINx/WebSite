@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Raymond Nava's Row Increase Counter</h1>
+
+<script>
+    let i = 0;
+    function addRow() {
+        var table = document.querySelector('table');  // Select the table every time
+        var inRow = table.insertRow();  // Create row
+        var inCell = inRow.insertCell();  // Add cell
+        i++;  // Increment the counter
+        inCell.textContent = 'New Row; button pressed:' + i ;  // Add text content to the cell
+    }
+</script>
+
+<button type="button" onclick="addRow()">Click Me to add a row!</button> 
+
+<table>
+    <tr>
+        <th>Column Test</th>
+    </tr>
+</table>
+
+</body>
+</html>

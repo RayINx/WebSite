@@ -7,9 +7,12 @@
     border: 3px solid black;
     margin: 10px;
     margin-bottom: 30px;
-    /* Need to implement space between this and 3 columns */
   }
   .navBar {
+    padding: 10px;
+    height: auto; /* maybe change  */
+    box-sizing: contant-box;
+    display: block;
     border: 3px solid black;
     margin: 10px;
   }
@@ -22,6 +25,8 @@
 
   ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
   }
   
@@ -29,16 +34,22 @@
     float: left;
   }
   
-  li a {
+  .navBar li a {
     display: block;
-    color: #000;
-    text-align: center;
     padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid black;
   }
 /* NavBar is missing being on the same line, not next lined*/
-
+/* Apply .column styles only inside .content or .sideBar */
+.content .column, .sideBar .column {
+    padding: 20px;
+    height: 300px;
+    box-sizing: border-box;
+  }
     .content {
-    width: 45%;
+    width: 70%;
     border: 3px solid black;
     margin: 10px;
   }

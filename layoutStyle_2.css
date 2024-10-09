@@ -1,7 +1,7 @@
-/* Style Sheet/Layout 1 */
+/* Style Sheet/Layout 2 */
 
 /* Style the top Large Header, centered*/
-  .header {
+.header {
     padding: 20px;
     text-align: center;
     border: 3px solid black;
@@ -9,24 +9,7 @@
     margin-bottom: 30px;
     /* Need to implement space between this and 3 columns */
   }
-
-/* Creating the 3 content panels */
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
-/* Creating the 3 content panels */
-  .column{
-    padding: 20px;
-    height: 300px;
-    box-sizing: border-box;
-  }
-
-/* 1st panel */
-  
-  .column.navBar {
-    float: left;
-    width: 25%;
+  .navBar {
     border: 3px solid black;
     margin: 10px;
   }
@@ -36,40 +19,36 @@
     background-color: #ffffff;
     color: rgb(112, 112, 112);
   }
-  
+
   ul {
     list-style-type: none;
-    width: 200px;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
   }
   
   li a {
     display: block;
     color: #000;
+    text-align: center;
     padding: 8px 16px;
   }
+/* NavBar is missing being on the same line, not next lined*/
 
-/* 2nd panel */
-  .column.content {
-    float: left;
+    .content {
     width: 45%;
     border: 3px solid black;
     margin: 10px;
   }
 
-/* 3rd panel */
-  .column.sideBar {
-    float: right;
+    .sideBar {
     width: 25%;
     border: 3px solid black;
     margin: 10px;
   }
 
-/* Clear floats after the columns */
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
   .footer {
     padding: 10px;

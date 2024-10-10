@@ -1,18 +1,21 @@
 /* Style Sheet/Layout 3 */
-
-/* Style the top Large Header, centered*/
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+/* Style the top Large Header, left*/
 .header {
+    width: 600px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     border: 3px solid black;
-    margin: 10px;
-    margin-bottom: 30px;
-    /* Need to implement space between this and 3 columns */
+    margin: 5px;
   }
   .navBar {
-    width: 25%;
+    padding: 10px;
+    width: 600px;
     border: 3px solid black;
-    margin: 10px;
+    margin: 5px;
   }
 
 /* Change color on hover for bar */
@@ -21,20 +24,23 @@
     color: rgb(112, 112, 112);
   }
 
-    .content {
-    width: 45%;
+  #cont{
     border: 3px solid black;
-    margin: 10px;
+    width: 600px;
+    padding: 10px;
+    margin: 5px;
   }
 
-    .sideBar {
-    width: 25%;
+  .sideBar {
+    width: 600px;
+    padding: 10px;
     border: 3px solid black;
-    margin: 10px;
+    margin: 5px;
   }
 
 
   .footer {
+    width: 600px;
     padding: 10px;
     border: 3px solid black;
     margin: 5px;

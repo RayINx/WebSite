@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
   }
+
 /* Creating the 3 content panels */
   .column{
     padding: 20px;
@@ -36,7 +37,7 @@
     background-color: #ffffff;
     color: rgb(112, 112, 112);
   }
-  
+
   ul {
     list-style-type: none;
     width: 200px;

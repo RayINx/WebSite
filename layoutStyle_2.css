@@ -1,24 +1,58 @@
 /* Style Sheet/Layout 2 */
 
 /* Style the top Large Header, centered*/
-.header {
-    padding: 20px;
-    text-align: center;
+    .header {
+        padding: 20px;
+        text-align: center;
+        border: 3px solid black;
+        margin: 10px;
+    }
+
+
+/* Creating the 2 panels, content and sideBar */
+    .column{    
+        padding: 20px;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .column.content {
+    float: left;
+    width: 70%;
     border: 3px solid black;
     margin: 10px;
-    margin-bottom: 30px;
-  }
-  .navBar {
-    padding: 10px;
-    height: auto; /* maybe change  */
-    box-sizing: contant-box;
-    display: block;
+    margin-right: 0px;
+    }
+    .p{
+        
+    }
+
+    .column.sideBar {
+    float: right;
+    width: 25%;
     border: 3px solid black;
     margin: 10px;
+    margin-left: 0px;
+    }
+
+    /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-/* Change color on hover for bar */
-  .navBar a:hover {
+
+/* navBar  */
+  .navBar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: auto; /* maybe change  */
+    border: 3px solid black;
+    margin: 10px;
+    margin-bottom: 5px;
+  } 
+    .navBar a:hover {
     background-color: #ffffff;
     color: rgb(112, 112, 112);
   }
@@ -37,32 +71,11 @@
   .navBar li a {
     display: block;
     padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    border-right: 1px solid black;
-  }
-/* NavBar is missing being on the same line, not next lined*/
-/* Apply .column styles only inside .content or .sideBar */
-.content .column, .sideBar .column {
-    padding: 20px;
-    height: 300px;
-    box-sizing: border-box;
-  }
-    .content {
-    width: 70%;
-    border: 3px solid black;
-    margin: 10px;
   }
 
-    .sideBar {
-    width: 25%;
-    border: 3px solid black;
-    margin: 10px;
-  }
-
-
+/* Footer */
   .footer {
     padding: 10px;
     border: 3px solid black;
-    margin: 5px;
+    margin: 10px;
   }
